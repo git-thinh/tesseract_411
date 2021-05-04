@@ -44,6 +44,8 @@ class Program
         var redis = new RedisBase(new RedisSetting(REDIS_TYPE.ONLY_READ, 1001));
 
 
+
+
         return;
 
         //File.WriteAllText(@"C:\___.txt", m_port_write.ToString());
@@ -51,7 +53,7 @@ class Program
         if (m_port_write == 0) m_port_write = 1000;
         if (m_port_read == 0) m_port_read = 1001;
         m_subcriber = new RedisBase(new RedisSetting(REDIS_TYPE.ONLY_SUBCRIBE, 1001));
-        _subscribe("__IMG2ZIP_IN");
+        _subscribe("__TESSERACT411_IN");
 
         string[] a;
         string s;
