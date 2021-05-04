@@ -34,11 +34,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\_shared\redisbasic\RedisBase.cs">
+      <Link>_Shared\RedisBasic\RedisBase.cs</Link>
+    </Compile>
+    <Compile Include="..\_shared\redisbasic\RedisSetting.cs">
+      <Link>_Shared\RedisBasic\RedisSetting.cs</Link>
+    </Compile>
+    <Compile Include="..\_shared\redisbasic\REDIS_TYPE.cs">
+      <Link>_Shared\RedisBasic\REDIS_TYPE.cs</Link>
+    </Compile>
+    <Compile Include="..\_shared\redisbasic\ResponseException.cs">
+      <Link>_Shared\RedisBasic\ResponseException.cs</Link>
+    </Compile>
     <Compile Include="..\_Shared\Tesseract\4.1.1\AddNewColorStatus.cs">
       <Link>_Shared\Tesseract\AddNewColorStatus.cs</Link>
     </Compile>
@@ -222,6 +237,12 @@
     <Compile Include="..\_Shared\_static_this.cs">
       <Link>_Shared\_static_this.cs</Link>
     </Compile>
+    <Compile Include="MyService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyServiceInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -234,6 +255,9 @@
       <Link>tessdata\vie.traineddata</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
