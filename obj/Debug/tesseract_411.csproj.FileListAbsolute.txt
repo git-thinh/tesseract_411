@@ -1,7 +1,0 @@
-D:\tt\build\New folder\tessdata\eng.traineddata
-D:\tt\build\New folder\tessdata\vie.traineddata
-D:\tt\build\New folder\tesseract_411.exe
-D:\tt\build\New folder\tesseract_411.pdb
-D:\tt\core\tesseract_411\obj\Debug\tesseract_411.csproj.CoreCompileInputs.cache
-D:\tt\core\tesseract_411\obj\Debug\tesseract_411.exe
-D:\tt\core\tesseract_411\obj\Debug\tesseract_411.pdb
